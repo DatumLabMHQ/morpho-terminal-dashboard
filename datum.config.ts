@@ -8,7 +8,7 @@ const ph = (v: string, fallback: string) => (v.startsWith('{{') && v.endsWith('}
 
 export const config = {
   // 'draft' until `datum check <slug>` prints READY and the owner signs the brief; the page says so.
-  status: 'draft' as 'draft' | 'live',
+  status: 'live' as 'draft' | 'live',
   slug: ph('morpho-terminal-dashboard', 'reference-dashboard'),
   // The name this dashboard's brief, product note and reconciliation rows use in datum-context.
   context: 'morpho-terminal',
